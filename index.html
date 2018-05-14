@@ -22,6 +22,7 @@
   </head>
 
   <body>
+    <!--Start menu-->
     <ul id="slide-out" class="side-nav fixed z-depth-4">
       <li>
         <div class="userView">
@@ -44,59 +45,27 @@
         <div class="divider"></div>
       </li>
 
-      <li><a href="mapa.html"><i class="material-icons pink-item">location_on</i>Dónde estamos</a></li>
-      <li><a href="organizacion.html"><i class="material-icons pink-item">people</i>Tipo de organización</a></li>
-
-      <li><a href="names.html"><i class="material-icons pink-item">flight</i>Evolución</a></li>
-      <li><a href="estruturaOrganizacion.html"><i class="material-icons pink-item">device_hub</i>Estructura</a></li>
-
-      <li><a href="comments.html"><i class="material-icons pink-item">note_add</i>News Comments</a></li>
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">User Management
-            <i class="material-icons pink-item">person</i>
-          </a>
-            <div class="collapsible-body">
-              <ul>
-                <li>
-                  <a href="userdetails.html">User Detail</a>
-                </li>
-                <li>
-                  <a href="recentusers.html">Recent Users</a>
-                </li>
-                <li>
-                  <a href="reports.html">Reports</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+      <li>
+        <a class="subheader">Management</a>
       </li>
-
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Announcements
-            <i class="material-icons pink-item">arrow_drop_down</i>
-          </a>
-            <div class="collapsible-body">
-              <ul>
-                <li>
-                  <a href="addannoun.html">Add New</a>
-                </li>
-                <li>
-                  <a href="allannoun.html">All Announcements</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+      <li><a href="mapa.html"><i class="material-icons pink-item">thumbs_up_down</i>Donde estamós</a></li>
+      <li>
+        <a href="evolution.html">
+          <i class="material-icons pink-item">thumbs_up_down</i>Evolución</a>
+      </li>
+      <li>
+        <a href="comments.html">
+          <i class="material-icons pink-item">note_add</i>Algo</a>
+      </li>
+      <li>
+        <a href="developers.html">
+          <i class="material-icons pink-item">person</i>Integrantes</a>
       </li>
     </ul>
+    <!--Finish menu-->
     <main>
       <section class="content">
-        <div class="page-announce valign-wrapper bg-aqua">
+        <div class="page-announce valign-wrapper bg-aqua z-depth-3">
           <a href="#" data-activates="slide-out" class="button-collapse valign hide-on-large-only">
             <i class="material-icons">menu</i>
           </a>
@@ -104,20 +73,32 @@
         </div>
         <!-- Stat Boxes -->
         <div class="row">
-          <div class="col l12 s12 bg-yellow">
+          <div class="col l12 s12">
             <!-- small box -->
-            <div class="small-box">
+            <h3 class="title-tcs">¿Qué es TCS?</h3>
+            <div class="small-box blue lighten-5">
               <div class="inner">
-                <h3>¿Quién es TCS?</h3>
               </div>
-              <a href="#" class="small-box-footer" class="animsition-link" id="moreInfoTcs">More info
-              <i class="fa fa-arrow-circle-right"></i>
+              <a href="#" class="small-box-footer" class="animsition-link" id="moreInfoTcs"><i class="fa fa-arrow-circle-right"></i>
             </a>
-              <div class="infoTcs" hidden>
+              <div class="row infoTcs z-depth-3">
+                <div class="col s1">
+                  <p></p>
+                </div>
+                <div class="col m10">
+                  <p class="parrafo">TCS Colombia comenzó sus operaciones en el año 2005, trabajando en forma conjunta con el centro Uruguay. Ese mismo año, se gana una importante licitación en una empresa de telecomunicaciones, al mismo tiempo que se desarrolla el Sistema
+                    Integrado de Información Financiera para el Ministerio de Hacienda del Gobierno de Colombia.
+                  </p>
+                </div>
+                <div class="col s1">
+                  <p></p>
+                </div>
+              </div>
+              <!--<div class="infoTcs" hidden>
                 <h4 class="parrafo">TCS Colombia comenzó sus operaciones en el año 2005, trabajando en forma conjunta con el centro Uruguay. Ese mismo año, se gana una importante licitación en una empresa de telecomunicaciones, al mismo tiempo que se desarrolla el Sistema
                   Integrado de Información Financiera para el Ministerio de Hacienda del Gobierno de Colombia.
                 </h4>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>

@@ -7,10 +7,14 @@ body {
   border-radius: 0% !important;
   margin: 0 auto;
 }
+.title-tcs {
+  text-align: center !important;
+}
 
 .parrafo {
   text-align: center !important;
-  color: #fff; 
+  color: #000 !important;
+  font-size: 32px;
 }
 
 h2 {
