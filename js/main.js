@@ -304,6 +304,9 @@ $(".containerMapa").mapael({
       "href": "#",
       "tooltip": {
         "content": "<span style=\"font-weight:bold;\">Canada<\/span><br \/>"
+      },
+      attrs: {
+        fill: "#e2e5e8" //"#aedcf4"
       }
     },
     "CV": {
@@ -1443,6 +1446,13 @@ $(".containerMapa").mapael({
       value: 500000000,
       id: "AR",
       tooltip: { content: "Argentina" }
+    },
+    'Canada': {
+      latitude: 60.0000000,
+      longitude: -95.0000000,
+      value: 500000000,
+      id: "CA",
+      tooltip: { content: "Canada" }
     },
     'Colombia': {
       latitude: 4.0000000,
