@@ -21,30 +21,43 @@
           <div class="background">
             <img src="assets/img/photo1.png">
           </div>
-          <a href="#!user">
-            <img class="circle" src="assets/img/tata.png">
-          </a>
-          <a href="#!name">
-            <span class="white-text name">TCS</span>
-          </a>
 
+          <a href="#!user"><img class="circle" src="assets/img/tata.png"></a>
+          <a href="#!name"><span class="white-text name">Evolución</span></a>
         </div>
       </li>
 
-      <li><a class="active" href="index.html"><i class="material-icons pink-item">dashboard</i>TCS</a></li>
+      <li>
+        <form class="sidebar-form">
+          <div class="input-group">
+            <input id="accounts" type="text" name="username" class="form-control" placeholder="Universal Search" autocomplete="off" />
+          </div>
+        </form>
+      </li>
 
+      <li><a class="active" href="index.html"><i class="material-icons pink-item">dashboard</i>TCS</a></li>
       <li>
         <div class="divider"></div>
       </li>
 
-      <li><a href="mapa.html"><i class="material-icons pink-item">location_on</i>Dónde estamos</a></li>
-      <li><a href="organizacion.html"><i class="material-icons pink-item">people</i>Tipo de organización</a></li>
+      <li><a class="subheader">Management</a></li>
+      <li><a href="names.html"><i class="material-icons pink-item">thumbs_up_down</i>Evolución</a></li>
+      <li><a href="estructura.html"><i class="material-icons pink-item">note_add</i>Estructura</a></li>
 
-      <li><a href="names.html"><i class="material-icons pink-item">flight</i>Evolución</a></li>
-      <li><a href="estructura.html"><i class="material-icons pink-item">device_hub</i>Estructura</a></li>
-
-      <li><a href="comments.html"><i class="material-icons pink-item">note_add</i>News Comments</a></li>
-
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">User Management<i class="material-icons pink-item">person</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="userdetails.html">User Detail</a></li>
+                <li><a href="recentusers.html">Recent Users</a></li>
+                <li><a href="reports.html">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
 
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
@@ -65,16 +78,15 @@
 
         <div class="page-announce valign-wrapper z-depth-3">
           <a href="#" data-activates="slide-out" class="button-collapse valign hide-on-large-only"><i class="material-icons">menu</i></a>
-          <h1 class="page-announce-text valign">Evolución</h1>
+          <h1 class="page-announce-text valign">Estructura</h1>
         </div>
         <div class="row">
           <div class="col l12 s12 bg-yellow">
             <div class="small-box">
               <p class="parrafo">
-                TCS Colombia comenzó sus operaciones en el año 2005, trabajando en forma conjunta con el centro Uruguay. Ese mismo año, se gana una importante licitación en una empresa de telecomunicaciones, al mismo tiempo que se desarrolla el Sistema Integrado de Información
-                Financiera para el Ministerio de Hacienda del Gobierno de Colombia
+                Su estructura es matricial ya que tiene un sistema de mandos múltiples, lo que quieres decir que al momento de tomar una decisión de gran relevancia se tendria que consultar con toda una cadena de mando que decidira si aprueba o rechaza dicha decisión
               </p>
-              <a href="#" class="small-box-footer" class="animsition-link" id="moreInfoTcs">Mas información
+              <a href="#" class="small-box-footer" class="animsition-link" id="moreInfoTcs">More info
               <i class="fa fa-arrow-circle-right"></i>
             </a>
             </div>
@@ -85,13 +97,7 @@
 
         </div>
         </div>
-        <img class="responsive-img infoTcs img tooltipped" data-position="left" data-delay="50" data-tooltip="Hoy somos 1500 personas" src="assets/img/cp3.png" alt="grupo grande" width="50%" hidden>
-        <div>
-          <img class="responsive-img infoTcs img tooltipped" data-position="left" data-delay="50" data-tooltip="5 personas" id="team2" src="assets/img/team.png" alt="grupo mediano" width="15%" hidden>
-        </div>
-        <div>
-          <img class="responsive-img infoTcs img tooltipped" data-position="left" data-delay="50" data-tooltip="1 persona" id="people" src="assets/img/man.png" alt="person" width="10%" hidden>
-        </div>
+        <img class="responsive-img infoTcs img tooltipped" data-position="left" data-delay="50" data-tooltip="Estos son nuestros lideres" src="assets/img/lider2.png" alt="grupo grande" width="60%" hidden>
 
         </div>
         </div>
