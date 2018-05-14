@@ -28,7 +28,8 @@ $(".containerMapa").mapael({
           console.log('textElem:', textElem)
           console.log('elemOptions: ', elemOptions)
             //alert(elemOptions.attrs.fill)
-          alert(elemOptions.name)
+            //alert(elemOptions.name)
+          elemOptions.name == "Colombia" ? location.href = "organizacion.html" : ""
         }
       }
     },
