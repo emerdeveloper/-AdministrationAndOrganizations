@@ -53,7 +53,7 @@
                 </div>
                 <div class="collapsible-body">
                   <p class="parrafo">Su estructura es matricial, ya que tiene un sistema de mandos múltiples, lo que quieres decir que al momento de tomar una decisión de gran relevancia se tendría que consultar con toda una cadena de mando que decidirá si aprueba o rechaza dicha decisión.</p>
-                    <div class="fixed-action-btn horizontal tooltipped" data-position="top" data-position="top" data-delay="50 " data-tooltip="Quick Links" class="animsition-link" id="moreInfoTcs">
+                    <div class="fixed-action-btn horizontal tooltipped" data-position="top" data-position="top" data-delay="50 " data-tooltip="Más información" class="animsition-link" id="moreInfoTcs">
                         <a class="btn-floating btn-large blue darken-3">
                           <i class="large material-icons ">add</i>
                         </a>
@@ -86,6 +86,29 @@
     <!-- Yo dawg, I heard you like hacks. So I hacked your hack. (moved the sidenav js up so it actually works) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script>
+        // Hide sideNav
+        $('.button-collapse').sideNav({
+          menuWidth: 300, // Default is 300
+          edge: 'left', // Choose the horizontal origin
+          closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          draggable: true // Choose whether you can drag to open on touch screens
+        });
+         $(document).ready(() => {
+           $("#moreInfoTcs").click(() => {
+             // $(".infoTcs").slideToggle("slow", "swing", () => {
+             $(".row").slideToggle("slow", "swing");
+             $(".infoTcs").show().removeClass("animated bounceOutLeft").addClass("animated bounceInLeft").delay(3000);
+             // });
+           });
+           $(".infoTcs").click(() => {
+             $(".row").show("slow");
+             $(".infoTcs").removeClass("animated bounceInLeft").addClass("animated bounceOutLeft").delay(3000);
+           });
+         });
+         $('select').material_select();
+         $('.collapsible').collapsible();
+       </script>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </body>
