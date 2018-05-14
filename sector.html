@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Control Panel</title>
+    <title>organización</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
@@ -11,13 +11,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <!-- mapa -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
-    <script src="./js/jquery.mapael.js" charset="utf-8"></script>
-    <script src="./js/world_countries.js" charset="utf-8"></script>
+    <!-- Animate -->
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+
   </head>
 
   <body>
@@ -39,6 +37,7 @@
       </li>
 
       <li><a class="active" href="index.html"><i class="material-icons pink-item">dashboard</i>TCS</a></li>
+
       <li>
         <div class="divider"></div>
       </li>
@@ -53,24 +52,31 @@
     <!--Finish menu-->
     <main>
       <section class="content">
-        <div class="page-announce valign-wrapper bg-aqua z-depth-3">
+        <div class="page-announce valign-wrapper bg-aqua">
           <a href="#" data-activates="slide-out" class="button-collapse valign hide-on-large-only">
             <i class="material-icons">menu</i>
           </a>
           <h1 class="page-announce-text valign">TATA Consultancy Services</h1>
         </div>
-        <div class="conten">
-          <div class="quick-links center-align">
-            <h3>Dónde estamos</h3>
+        <!-- Stat Boxes -->
+        <div class="row conten animated fadeInUp">
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">
+                  <h3 class="title-tcs">Sector</h3>
+                </div>
+                <div class="collapsible-body">
+                  <p class="parrafo">Pertenece al sector terciario ya que es una empresa prestadora de servicios, en este caso grandes empresas paisas como el Metro de Medellín y Bancolombia hacen uso de los recursos que ofrece TCS.</p>
+                </div>
+              </li>
+            </ul>
           </div>
-
-          <div class="custom-responsive">
-            <div class="containerMapa">
-              <div class="map">Cargando mapa</div>
-              <input type="text" name="" value="" class="nameCountry" placeholder="Buscar país">
-              <input type="button" class="btn btn-success" value="Buscar" id="refresh" />
-              <div class="menssage"></div>
-            </div>
+        <div class="conten row">
+          <div class="col s8">
+            <img class="animated bounceInLeft" src="assets/img/bancolombia.jpg" alt="">
+          </div>
+		  <div class="col s4">
+            <img class="animated bounceInRight" src="assets/img/metro.png" alt="">
           </div>
         </div>
         </div>
@@ -91,6 +97,45 @@
     <script src="./js/main.js" charset="utf-8"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <script>
+      // Hide sideNav
+      $('.button-collapse').sideNav({
+        menuWidth: 300, // Default is 300
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        draggable: true // Choose whether you can drag to open on touch screens
+      });
+      $(document).ready(function() {
+
+        $("#moreInfoTcs").click(function() {
+          $(".infoTcs").slideToggle("slow");
+        });
+
+      });
+      $('select').material_select();
+      $('.collapsible').collapsible();
+    </script>
+
+    <div class="fixed-action-btn horizontal tooltipped" data-position="top" dattooltipped " data-position="top " data-delay="50 " data-tooltip="Quick Links ">
+            <a class="btn-floating btn-large red ">
+              <i class="large material-icons ">mode_edit</i>
+            </a>
+            <ul>
+              <li><a class="btn-floating red tooltipped " data-position="top " data-delay="50 " data-tooltip="Handbook " href="# "><i class="material-icons ">insert_chart</i></a></li>
+              <li><a class="btn-floating yellow darken-1 tooltipped " data-position="top " data-delay="50 " data-tooltip="Staff Applications " href="# "><i class="material-icons ">format_quote</i></a></li>
+              <li><a class="btn-floating green tooltipped " data-position="top " data-delay="50 " data-tooltip="Name Guidelines " href="# "><i class="material-icons ">publish</i></a></li>" <li>
+      <a class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Issue Tracker" href="#">
+        <i class="material-icons">attach_file</i>
+      </a>
+      </li>
+      <li>
+        <a class="btn-floating orange tooltipped" data-position="top" data-delay="50" data-tooltip="Support" href="#">
+          <i class="material-icons">person</i>
+        </a>
+      </li>
+      </ul>
+    </div>
     </div>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
