@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8">
     <title>Control Panel</title>
@@ -9,8 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
-  
+
   <body>
     <ul id="slide-out" class="side-nav fixed z-depth-4">
       <li>
@@ -18,12 +21,12 @@
           <div class="background">
             <img src="assets/img/photo1.png">
           </div>
-          <a href="#!user"><img class="circle" src="assets/img/avatar04.png"></a>
-          <a href="#!name"><span class="white-text name">Welcome back,</span></a>
-          <a href="#!email"><span class="white-text email">user!</span></a>
+
+          <a href="#!user"><img class="circle" src="assets/img/tata.png"></a>
+          <a href="#!name"><span class="white-text name">Evolución</span></a>
         </div>
       </li>
-      
+
       <li>
         <form class="sidebar-form">
           <div class="input-group">
@@ -31,14 +34,16 @@
           </div>
         </form>
       </li>
-      
-      <li><a class="active" href="index.html"><i class="material-icons pink-item">dashboard</i>Dashboard</a></li>
-      <li><div class="divider"></div></li>
-      
+
+      <li><a class="active" href="index.html"><i class="material-icons pink-item">dashboard</i>TCS</a></li>
+      <li>
+        <div class="divider"></div>
+      </li>
+
       <li><a class="subheader">Management</a></li>
-      <li><a href="names.html"><i class="material-icons pink-item">thumbs_up_down</i>Name Approvals</a></li>
+      <li><a href="names.html"><i class="material-icons pink-item">thumbs_up_down</i>Evolución</a></li>
       <li><a href="comments.html"><i class="material-icons pink-item">note_add</i>News Comments</a></li>
-      
+
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li>
@@ -53,7 +58,7 @@
           </li>
         </ul>
       </li>
-      
+
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li>
@@ -69,108 +74,91 @@
       </li>
     </ul>
     <main>
-    <section class="content">
-      
-      <div class="page-announce valign-wrapper"><a href="#" data-activates="slide-out" class="button-collapse valign hide-on-large-only"><i class="material-icons">menu</i></a><h1 class="page-announce-text valign">Name Approvals </h1></div>
-      <div id="posttable" class="container">
-        <table class="responsive-table striped hover centered" id="names-table">
-          <thead>
-            <tr>
-              <th>Username:</th>
-              <th>Date Requested:</th>
-              <th>Toon ID:</th>
-              <th>Name Requested:</th>
-              <th>Name Actions:</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a>MeredithPalmer</a></td>
-              <td><a>2017-03-30</a></td>
-              <td><a>1000016</a></td>
-              <td><a>Ticking Time Bags</a></td>
-              <td>
-                <div class="btn-toolbar">
-                  <a href="#">
-                    <button class="btn green" type="submit">
-                    <i class="material-icons">done</i>
-                    </button>
-                  </a>
-                  <a href="#">
-                    <button class="btn red" type="submit">
-                    <i class="material-icons">remove</i>
-                    </button>
-                  </a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><a>OscarMartinez</a></td>
-              <td><a>2017-03-30</a></td>
-              <td><a>1000017</a></td>
-              <td><a>Aggregious</a></td>
-              <td>
-                <div class="btn-toolbar">
-                  <a href="#">
-                    <button class="btn green" type="submit">
-                    <i class="material-icons">done</i>
-                    </button>
-                  </a>
-                  <a href="#">
-                    <button class="btn red" type="submit">
-                    <i class="material-icons">remove</i>
-                    </button>
-                  </a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="content">
+
+        <div class="page-announce valign-wrapper"><a href="#" data-activates="slide-out" class="button-collapse valign hide-on-large-only"><i class="material-icons">menu</i></a>
+          <h1 class="page-announce-text valign">Evolución</h1>
+        </div>
+        <div class="row">
+          <div class="col l12 s12 bg-yellow">
+            <div class="small-box">
+              <p class="parrafo">
+                TCS Colombia comenzó sus operaciones en el año 2005, trabajando en forma conjunta con el centro Uruguay. Ese mismo año, se gana una importante licitación en una empresa de telecomunicaciones, al mismo tiempo que se desarrolla el Sistema Integrado de Información
+                Financiera para el Ministerio de Hacienda del Gobierno de Colombia
+              </p>
+              <a href="#" class="small-box-footer" class="animsition-link" id="moreInfoTcs">More info
+              <i class="fa fa-arrow-circle-right"></i>
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="posttable" class="container">
+
+        </div>
+        </div>
+        <img class="responsive-img infoTcs img tooltipped" data-position="left" data-delay="50" data-tooltip="Hoy somos 1500 personas" src="assets/img/cp3.png" alt="grupo grande" width="50%" hidden>
+        <div>
+          <img class="responsive-img infoTcs img tooltipped" data-position="left" data-delay="50" data-tooltip="5 personas" id="team2" src="assets/img/team.png" alt="grupo mediano" width="15%" hidden>
+        </div>
+        <div>
+          <img class="responsive-img infoTcs img tooltipped" data-position="left" data-delay="50" data-tooltip="1 persona" id="people" src="assets/img/man.png" alt="person" width="10%" hidden>
+        </div>
+
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+          © 2018 tcs.
+        </div>
       </div>
-    </div>
-  </section>
-  </main>
-  <footer class="page-footer">
-    <div class="footer-copyright">
-      <div class="container">
-        © 2017 Farooq Designs. All rights reserved.
-      </div>
-    </div>
-  </footer>
-  
-  <!-- So this is basically a hack, until I come up with a better solution. autocomplete is overridden
+    </footer>
+
+    <!-- So this is basically a hack, until I come up with a better solution. autocomplete is overridden
   in the materialize js file & I don't want that.
   -->
-  <!-- Yo dawg, I heard you like hacks. So I hacked your hack. (moved the sidenav js up so it actually works) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-  <script>
-  // Hide sideNav
-  $('.button-collapse').sideNav({
-  menuWidth: 300, // Default is 300
-  edge: 'left', // Choose the horizontal origin
-  closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    draggable: true // Choose whether you can drag to open on touch screens
-    });
-    $(document).ready(function(){
-    $('.tooltipped').tooltip({delay: 50});
-    });
-    $('select').material_select();
-    $('.collapsible').collapsible();
+    <!-- Yo dawg, I heard you like hacks. So I hacked your hack. (moved the sidenav js up so it actually works) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script>
+      // Hide sideNav
+      $('.button-collapse').sideNav({
+        menuWidth: 300, // Default is 300
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        draggable: true // Choose whether you can drag to open on touch screens
+      });
+      $(document).ready(() => {
+        $("#moreInfoTcs").click(() => {
+          // $(".infoTcs").slideToggle("slow", "swing", () => {
+          $(".row").slideToggle("slow", "swing");
+          $(".infoTcs").show().removeClass("animated bounceOutLeft").addClass("animated bounceInLeft").delay(3000);
+          // });
+        });
+        $(".infoTcs").click(() => {
+          $(".row").show("slow");
+          $(".infoTcs").removeClass("animated bounceInLeft").addClass("animated bounceOutLeft").delay(3000);
+        });
+      });
+      $('select').material_select();
+      $('.collapsible').collapsible();
     </script>
-    <div class="fixed-action-btn horizontal tooltipped" data-position="top" dattooltipped" data-position="top" data-delay="50" data-tooltip="Quick Links">
-      <a class="btn-floating btn-large red">
-        <i class="large material-icons">mode_edit</i>
+    <div class="fixed-action-btn horizontal tooltipped" data-position="top" dattooltipped " data-position="top " data-delay="50 " data-tooltip="Quick Links ">
+      <a class="btn-floating btn-large red ">
+        <i class="large material-icons ">mode_edit</i>
       </a>
       <ul>
-        <li><a class="btn-floating red tooltipped" data-position="top" data-delay="50" data-tooltip="Handbook" href="#"><i class="material-icons">insert_chart</i></a></li>
-        <li><a class="btn-floating yellow darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Staff Applications" href="#"><i class="material-icons">format_quote</i></a></li>
-        <li><a class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Name Guidelines" href="#"><i class="material-icons">publish</i></a></li>"
-        <li><a class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Issue Tracker" href="#"><i class="material-icons">attach_file</i></a></li>
-        <li><a class="btn-floating orange tooltipped" data-position="top" data-delay="50" data-tooltip="Support" href="#"><i class="material-icons">person</i></a></li>
+        <li><a class="btn-floating red tooltipped " data-position="top " data-delay="50 " data-tooltip="Handbook " href="# "><i class="material-icons ">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1 tooltipped " data-position="top " data-delay="50 " data-tooltip="Staff Applications " href="# "><i class="material-icons ">format_quote</i></a></li>
+        <li><a class="btn-floating green tooltipped " data-position="top " data-delay="50 " data-tooltip="Name Guidelines " href="# "><i class="material-icons ">publish</i></a></li>" <li><a class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Issue Tracker" href="#"><i class="material-icons">attach_file</i></a></li>
+      <li><a class="btn-floating orange tooltipped" data-position="top" data-delay="50" data-tooltip="Support" href="#"><i class="material-icons">person</i></a></li>
       </ul>
     </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</body>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </body>
+
 </html>

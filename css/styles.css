@@ -3,6 +3,19 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.circle {
+  border-radius: 0% !important;
+  margin: 0 auto;
+}
+
+.parrafo {
+  text-align: justify;
+}
+
+h2 {
+  color: white;
+}
+
 .menssage {
   visibility: hidden;
   min-width: 250px;

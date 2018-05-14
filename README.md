@@ -16,3 +16,25 @@ A demo can be found on my site, at [farooq.xyz/modcp](https://farooq.xyz/modcp)
 
 * Materialize CSS, the CSS framework used to make this site possible. - [Link](http://materializecss.com)
 * Operation Dessert Storm's team, for whom this was designed for - [Link](https://opdessertstorm.com)
+
+
+
+
+5
+sector primiario es el que tiene materia primaria lamadeera
+sector secundario  el que utiliza  la materia prima 
+sector terciario
+
+clasificacion
+micro
+por que son 8 personas
+
+propiedad de capital
+mixta si recibe dineros del estado y fuentes eexternas
+publica si recibe dinereo solo del estado
+privada si esgupo de accinista 
+
+
+
+
+h nos quedo faltandolossietmas de informacion 
