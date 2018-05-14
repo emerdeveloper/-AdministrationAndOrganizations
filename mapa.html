@@ -11,28 +11,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <!-- mapa -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-    <!-- Animate -->
-    <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+    <script src="./js/jquery.mapael.js" charset="utf-8"></script>
+    <script src="./js/world_countries.js" charset="utf-8"></script>
   </head>
-  <style>
-    .circle {
-      border-radius: 0% !important;
-      margin: 0 auto;
-    }
-    
-    .parrafo {
-      text-align: justify;
-    }
-    
-    h2 {
-      color: white;
-    }
-  </style>
 
   <body>
 
@@ -132,32 +118,19 @@
           </a>
           <h1 class="page-announce-text valign">TATA Consultancy Services</h1>
         </div>
-        <!-- Stat Boxes -->
-        <div class="row">
-          <div class="col l12 s12 bg-yellow">
-            <!-- small box -->
-            <div >
-              <div class="inner">
-                <h3>¿Qué es TCS?</h3>
-              </div>
-              <a href="#" class="small-box-footer" class="animsition-link" id="moreInfoTcs">More info
-              <i class="fa fa-arrow-circle-right"></i>
-            </a>
-              <div class="infoTcs" hidden>
-                <h4 class="parrafo">TCS Colombia comenzó sus operaciones en el año 2005, trabajando en forma conjunta con el centro Uruguay. Ese mismo año, se gana una importante licitación en una empresa de telecomunicaciones, al mismo tiempo que se desarrolla el Sistema
-                  Integrado de Información Financiera para el Ministerio de Hacienda del Gobierno de Colombia.
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="conten">
           <div class="quick-links center-align">
-            <img class="animated fadeInUp" src="assets/img/tata.png" alt="">
+            <h3>Dónde estamos</h3>
           </div>
 
-
+          <div class="custom-responsive">
+            <div class="containerMapa">
+              <div class="map">Alternative content</div>
+              <input type="text" name="" value="" class="nameCountry">
+              <input type="button" class="btn btn-success" value="Update elements" id="refresh" />
+              <div class="menssage"></div>
+            </div>
+          </div>
         </div>
         </div>
       </section>
