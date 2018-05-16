@@ -3,10 +3,21 @@ body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
+.hover:hover {
+  font-size: 3.40rem;
+  animation-duration: 7s;
+  transition: all 200ms ease-in;
+}
+
+.hover {
+  overflow: hidden;
+}
+
 .circle {
   border-radius: 0% !important;
   margin: 0 auto;
 }
+
 .title-tcs {
   text-align: center !important;
 }
