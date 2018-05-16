@@ -100,3 +100,7 @@ body {
   background: #CECECE;
   border-radius: 0;
 }
+
+div > p{
+text-align: justify
+}
