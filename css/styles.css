@@ -1,3 +1,18 @@
+.btn-floating.btn-large {
+  width: 80px !important;
+  height: 81px !important;
+  padding-top: 13px !important;
+}
+
+.btn-floating.btn-large:hover{
+ font-size: 40px;
+ 
+}
+
+.hola-puto{
+  margin-top: 0px !important;
+}
+
 body {
   /* color: #fff; */
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
