@@ -2,7 +2,9 @@ body {
   /* color: #fff; */
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
-
+.titulo{
+  text-align: center;
+}
 .circle {
   border-radius: 0% !important;
   margin: 0 auto;
