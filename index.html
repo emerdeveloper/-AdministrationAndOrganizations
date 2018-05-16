@@ -48,6 +48,10 @@
       <li><a href="organizacion.html"><i class="material-icons pink-item">people</i>Tipo de organización</a></li>
       <li><a href="evolution.html"><i class="material-icons pink-item">flight</i>Evolución</a></li>
       <li><a href="estructura.html"><i class="material-icons pink-item">device_hub</i>Estructura</a></li>
+      <li><a href="sector.html"><i class="material-icons pink-item">priority_high</i>Sector</a></li>
+      <li><a href="propiedaCapital.html"><i class="material-icons pink-item">attach_money</i>Propiedad capital</a></li>
+      <li><a href="informationSystems.html"><i class="material-icons pink-item">computer</i>Sistemas de información</a></li>
+      <li><a href="comunication.html"><i class="material-icons pink-item">chat_bubble_outline</i>Comunicación</a></li>
       <li><a href="developers.html"><i class="material-icons pink-item">person</i>Integrantes</a></li>
     </ul>
     <!--Finish menu-->
@@ -60,9 +64,9 @@
           <h1 class="page-announce-text valign">TATA Consultancy Services</h1>
         </div>
         <!-- Stat Boxes -->
-        <div class="row conten">
+        <div class="row">
 
-          <ul class="collapsible">
+          <ul class="collapsible contenedor">
             <li>
               <div class="collapsible-header">
                 <h3 class="title-tcs">¿Qué es TCS?</h3>
@@ -83,7 +87,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer bg-aqua">
       <div class="footer-copyright">
         <div class="container">
           © 2018 TCS.
@@ -98,9 +102,27 @@
     <script src="./js/main.js" charset="utf-8"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script>
+      // Hide sideNav
+      $('.button-collapse').sideNav({
+        menuWidth: 300, // Default is 300
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        draggable: true // Choose whether you can drag to open on touch screens
+      });
+      $(document).ready(function() {
+
+        $("#moreInfoTcs").click(function() {
+          $(".infoTcs").slideToggle("slow");
+        });
+
+      });
+      $('select').material_select();
+      $('.collapsible').collapsible();
+    </script>
     </div>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   </body>
 

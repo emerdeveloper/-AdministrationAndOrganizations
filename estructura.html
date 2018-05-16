@@ -26,15 +26,20 @@
           <a href="#!name"><span class="white-text name">Evolución</span></a>
         </div>
       </li>
-	  
+
       <li><a class="active" href="index.html"><i class="material-icons pink-item">dashboard</i>TCS</a></li>
-      <li><div class="divider"></div></li>
+      <li>
+        <div class="divider"></div>
+      </li>
 
       <li><a href="mapa.html"><i class="material-icons pink-item">location_on</i>Dónde estamos</a></li>
       <li><a href="organizacion.html"><i class="material-icons pink-item">people</i>Tipo de organización</a></li>
       <li><a href="evolution.html"><i class="material-icons pink-item">flight</i>Evolución</a></li>
       <li><a href="estructura.html"><i class="material-icons pink-item">device_hub</i>Estructura</a></li>
-	  <li><a href="sector.html"><i class="material-icons pink-item">person</i>Sector</a></li>
+      <li><a href="sector.html"><i class="material-icons pink-item">priority_high</i>Sector</a></li>
+      <li><a href="propiedaCapital.html"><i class="material-icons pink-item">attach_money</i>Propiedad capital</a></li>
+      <li><a href="informationSystems.html"><i class="material-icons pink-item">computer</i>Sistemas de información</a></li>
+      <li><a href="comunication.html"><i class="material-icons pink-item">chat_bubble_outline</i>Comunicación</a></li>
       <li><a href="developers.html"><i class="material-icons pink-item">person</i>Integrantes</a></li>
     </ul>
     <main>
@@ -46,23 +51,24 @@
         </div>
 
         <div class="row conten animated bounceInDown">
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header">
-                  <h3 class="title-tcs">¿Líder o jefe?</h3>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">
+                <h3 class="title-tcs">¿Líder o jefe?</h3>
+              </div>
+              <div class="collapsible-body">
+                <p class="parrafo">Su estructura es matricial, ya que tiene un sistema de mandos múltiples, lo que quieres decir que al momento de tomar una decisión de gran relevancia se tendría que consultar con toda una cadena de mando que decidirá si aprueba o rechaza
+                  dicha decisión.</p>
+                <div class="fixed-action-btn horizontal tooltipped" data-position="top" data-position="top" data-delay="50 " data-tooltip="Más información" class="animsition-link" id="moreInfoTcs">
+                  <a class="btn-floating btn-large blue darken-3">
+                    <i class="large material-icons ">add</i>
+                  </a>
                 </div>
-                <div class="collapsible-body">
-                  <p class="parrafo">Su estructura es matricial, ya que tiene un sistema de mandos múltiples, lo que quieres decir que al momento de tomar una decisión de gran relevancia se tendría que consultar con toda una cadena de mando que decidirá si aprueba o rechaza dicha decisión.</p>
-                    <div class="fixed-action-btn horizontal tooltipped" data-position="top" data-position="top" data-delay="50 " data-tooltip="Más información" class="animsition-link" id="moreInfoTcs">
-                        <a class="btn-floating btn-large blue darken-3">
-                          <i class="large material-icons ">add</i>
-                        </a>
-                      </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-		
+              </div>
+            </li>
+          </ul>
+        </div>
+
         <div id="posttable" class="container">
         </div>
         </div>
@@ -72,7 +78,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer bg-aqua">
       <div class="footer-copyright">
         <div class="container">
           © 2018 tcs.
@@ -87,28 +93,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script>
-        // Hide sideNav
-        $('.button-collapse').sideNav({
-          menuWidth: 300, // Default is 300
-          edge: 'left', // Choose the horizontal origin
-          closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-          draggable: true // Choose whether you can drag to open on touch screens
+      // Hide sideNav
+      $('.button-collapse').sideNav({
+        menuWidth: 300, // Default is 300
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        draggable: true // Choose whether you can drag to open on touch screens
+      });
+      $(document).ready(() => {
+        $("#moreInfoTcs").click(() => {
+          // $(".infoTcs").slideToggle("slow", "swing", () => {
+          $(".row").slideToggle("slow", "swing");
+          $(".infoTcs").show().removeClass("animated bounceOutLeft").addClass("animated bounceInLeft").delay(3000);
+          // });
         });
-         $(document).ready(() => {
-           $("#moreInfoTcs").click(() => {
-             // $(".infoTcs").slideToggle("slow", "swing", () => {
-             $(".row").slideToggle("slow", "swing");
-             $(".infoTcs").show().removeClass("animated bounceOutLeft").addClass("animated bounceInLeft").delay(3000);
-             // });
-           });
-           $(".infoTcs").click(() => {
-             $(".row").show("slow");
-             $(".infoTcs").removeClass("animated bounceInLeft").addClass("animated bounceOutLeft").delay(3000);
-           });
-         });
-         $('select').material_select();
-         $('.collapsible').collapsible();
-       </script>
+        $(".infoTcs").click(() => {
+          $(".row").show("slow");
+          $(".infoTcs").removeClass("animated bounceInLeft").addClass("animated bounceOutLeft").delay(3000);
+        });
+      });
+      $('select').material_select();
+      $('.collapsible').collapsible();
+    </script>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </body>
