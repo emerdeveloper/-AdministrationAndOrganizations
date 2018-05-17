@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <!-- Animate -->
     <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
@@ -105,25 +105,24 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script>
-      // Hide sideNav
-      $('.button-collapse').sideNav({
-        menuWidth: 300, // Default is 300
-        edge: 'left', // Choose the horizontal origin
-        closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-        draggable: true // Choose whether you can drag to open on touch screens
-      });
-      $(document).ready(function() {
-
-        $("#moreInfoTcs").click(function() {
-          $(".infoTcs").slideToggle("slow");
+        // Hide sideNav
+        $('.button-collapse').sideNav({
+          menuWidth: 300, // Default is 300
+          edge: 'left', // Choose the horizontal origin
+          closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          draggable: true // Choose whether you can drag to open on touch screens
         });
-
-      });
-      $('select').material_select();
-      $('.collapsible').collapsible();
-    </script>
+        $(document).ready(function() {
+  
+          $("#moreInfoTcs").click(function() {
+            $(".infoTcs").slideToggle("slow");
+          });
+  
+        });
+        $('select').material_select();
+        $('.collapsible').collapsible();
+      </script>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   </body>
