@@ -100,4 +100,12 @@ body {
   height: 1px;
   background: #CECECE;
   border-radius: 0;
+<<<<<<< HEAD
 }
+=======
+}
+
+div > p{
+text-align: justify
+}
+>>>>>>> 830e3a7f076d40ffedc2c53b5984efd58ef32704
