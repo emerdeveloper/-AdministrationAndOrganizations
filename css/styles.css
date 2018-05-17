@@ -17,7 +17,6 @@ body {
   /* color: #fff; */
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
-<<<<<<< HEAD
 
 .hover:hover {
   font-size: 3.40rem;
@@ -29,11 +28,6 @@ body {
   overflow: hidden;
 }
 
-=======
-.titulo{
-  text-align: center;
-}
->>>>>>> 830e3a7f076d40ffedc2c53b5984efd58ef32704
 .circle {
   border-radius: 0% !important;
   margin: 0 auto;
